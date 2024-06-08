@@ -104,7 +104,6 @@ class Game:
                 continue
             
             if sum(row) == 2:
-                print("checking other moves")
                 # we try to move towards three in a row
                 position = -1
                 for j in range(3):
@@ -117,14 +116,12 @@ class Game:
         
         if len(notLosingMoves) > 0:
             x, y = notLosingMoves[0]
-            print(x, y)
             self.board[x][y] = 2
             self.turn = 1
             return
 
         if len(okMoves) > 0:
             x, y = random.choice[okMoves]
-            print(x, y)
             self.board[x][y] = 2
             self.turn = 1
             return

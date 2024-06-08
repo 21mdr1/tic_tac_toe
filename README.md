@@ -4,4 +4,4 @@ This is a simple Tic Tac Toe game that allows you to play against a friend or ag
 Requires Python 3
 
 Run:
-```python TIC_TAC_TOE.py```
+```python ./TIC_TAC_TOE.py```
