@@ -144,6 +144,7 @@ class Game:
         self.outro()
 
     def intro(self):
+        print("\033[2J\033[H", end="", flush=True)
         print('Welcome to TIC TAC TOE!')
         while True:
             print((
@@ -220,6 +221,7 @@ class Game:
         ))
 
     def print_board(self):
+        print("\033[2J\033[H", end="", flush=True)
         key = [' ', 'O', 'X']
 
         print((
